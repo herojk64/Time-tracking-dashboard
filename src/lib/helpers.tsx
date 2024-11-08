@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Activity } from "./interface";
 
 const fetchTimeData = async():Promise<Activity[]> => {
-   const request = await fetch('/json/data.json');
+   const request = await fetch('/Time-tracking-dashboard/json/data.json');
    if(!request.ok){
     throw new Error("Something went wrong while fetching the data.");
    }

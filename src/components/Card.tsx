@@ -35,12 +35,12 @@ const Card = ({ data }: PropsInteraface) => {
   return (
     <section className='card' data-id={data.title}>
       <div className='card__backside__design'>
-        <img src={backIcon} />
+        <img src={backIcon} alt="backdrop-icon"/>
       </div>
       <div className='card__content__wrapper'>
         <div className='menu__section'>
           <h1>{data.title}</h1>
-          <img src={DotIcon} />
+          <img src={DotIcon} alt="dot-icon"/>
         </div>
         <div className='timeframe__data__wrapper'>
 

@@ -7,7 +7,7 @@ const MenuCard = () => {
   return (
     <section className="menu-card">
       <article>
-        <img src={MenuIcon} />
+        <img src={MenuIcon} alt="menu-icon"/>
         <div>
           <p>Report for</p>
           <header>Jeremy Robson</header>
