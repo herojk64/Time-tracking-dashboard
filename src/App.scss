@@ -1,0 +1,7 @@
+.App{
+    @apply font-sans min-h-screen bg-neutral-very-dark-blue py-20 px-10 lg:p-0 lg:grid lg:place-items-center;
+
+    main{
+        @apply lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-8 space-y-8 lg:space-y-0;   
+    }
+}

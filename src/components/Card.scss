@@ -1,0 +1,81 @@
+.card {
+    @apply min-w-[11rem] min-h-[4rem];
+
+    .card__backside__design {
+        @apply rounded-tr-lg rounded-tl-lg py-2 px-4 overflow-hidden;
+
+        img {
+            @apply ms-auto w-14 h-14 -mt-2;
+        }
+    }
+
+    .card__content__wrapper {
+        @apply p-6 bg-neutral-dark-blue rounded-xl relative -mt-5 z-10 text-white space-y-3;
+
+        .timeframe__data__wrapper{
+            @apply lg:space-y-3 flex items-center justify-between lg:block;
+        }
+
+        .menu__section {
+            @apply flex justify-between items-center;
+
+            img {
+                @apply h-auto w-6 hover:text-white;
+            }
+        }
+
+        h1{
+            @apply text-sm;
+        }
+
+        h2 {
+            @apply text-4xl font-thin;
+        }
+
+        p {
+            @apply text-xs opacity-60;
+        }
+        
+        &:hover{
+            @apply bg-neutral-desaturated-blue;
+        }
+    }
+
+
+
+    &[data-id="Work"] {
+        .card__backside__design {
+            @apply bg-primary-light-red-work;
+        }
+    }
+
+    &[data-id="Play"] {
+        .card__backside__design {
+            @apply bg-primary-soft-blue-play;
+        }
+    }
+
+    &[data-id="Study"] {
+        .card__backside__design {
+            @apply bg-primary-light-red-study;
+        }
+    }
+
+    &[data-id="Exercise"] {
+        .card__backside__design {
+            @apply bg-primary-lime-green-exercise;
+        }
+    }
+
+    &[data-id="Social"] {
+        .card__backside__design {
+            @apply bg-primary-violet-social;
+        }
+    }
+
+    &[data-id="Self Care"] {
+        .card__backside__design {
+            @apply bg-primary-soft-orange;
+        }
+    }
+}

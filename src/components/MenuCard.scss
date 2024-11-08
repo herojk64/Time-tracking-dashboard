@@ -1,0 +1,32 @@
+.menu-card:first-child{
+    @apply row-span-2 bg-neutral-dark-blue rounded-xl;
+
+    article{
+        @apply px-4 pt-5 pb-6 lg:pt-2 lg:pb-20 gap-4 rounded-lg text-white  bg-primary-blue flex items-center lg:block;
+        img{ 
+            @apply h-14 w-14 border-2 border-white rounded-full lg:mb-6;
+        }
+
+        header{
+            @apply text-3xl font-thin lg:max-w-[1rem];
+        }
+
+        p{
+            @apply text-xs opacity-50 mb-2;
+        }
+    }
+    ul{
+        @apply py-4 px-4 lg:py-7 lg:px-4 lg:space-y-3 flex lg:block;
+
+        li{
+            @apply mx-auto lg:mx-0;
+        }
+        button{
+            @apply text-white text-opacity-50 hover:text-opacity-100 transition delay-75;
+        
+            &[data-selected="true"]{
+                @apply text-opacity-100;
+            }
+        }
+    }
+}
